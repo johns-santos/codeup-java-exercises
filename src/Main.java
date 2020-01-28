@@ -110,7 +110,10 @@ public class Main {
             String word2 = input.nextLine();
             System.out.print("Enter third word: ");
             String word3 = input.nextLine();
-            System.out.println("All the text entered: " + "\n" + word1 + "\n" + word2 + "\n" + word3 + "\n");
+//            System.out.println("All the text entered: " + "\n" + word1 + "\n" + word2 + "\n" + word3 + "\n");
+            System.out.printf("All the text entered: " + "\n" + "%s" + "\n" + "%s" + "\n" + "%s" + "\n", word1, word2, word3);
+//            scanner.nextLine();
+
             // (3) - 1 Yes - more than 3 words can be entered.
         }
 
@@ -123,7 +126,10 @@ public class Main {
 
         }
 
+
         {
+
+
             int length, width, area, perimeter;
 
             Scanner in = new Scanner(System.in);
@@ -137,6 +143,7 @@ public class Main {
             perimeter = 2 * (length + width);
             System.out.println("Area of Rectangle : " + area);
             System.out.println("Rectangle of Rectangle : " + perimeter);
+
         }
     }
 };
