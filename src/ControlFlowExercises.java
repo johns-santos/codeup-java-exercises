@@ -36,7 +36,7 @@ public class ControlFlowExercises {
             do {
                 System.out.println(a);
                 a -= 5;
-            } while (a >= 0);
+            } while (a >= -10);
         }
 
         {
@@ -99,7 +99,7 @@ public class ControlFlowExercises {
                         int y = 1;
                         for (int col = userInput; col < userInput + 3; col++) {
                             y = y * userInput;
-                            System.out.print(y + "      |    ");
+                            System.out.print(y + "   |     ");
                         }
                         System.out.println();
                         userInput++;
@@ -116,19 +116,42 @@ public class ControlFlowExercises {
                 System.out.print("Enter a number 0 - 100: ");
                 int userInput = input.nextInt();
 
-                if(userInput <= 100 && userInput >= 88) {
+                if (userInput <= 100 && userInput >= 88) {
                     System.out.println("Letter grade is: A" + "+");
-                } else if (userInput <=87 && userInput >= 80) {
+                } else if (userInput <= 87 && userInput >= 80) {
                     System.out.println("Letter grade is: B ");
-                } else if (userInput <=79 && userInput >= 67) {
+                } else if (userInput <= 79 && userInput >= 67) {
                     System.out.println("Letter grade is: C ");
-                } else if (userInput <=66 && userInput >= 60) {
+                } else if (userInput <= 66 && userInput >= 60) {
                     System.out.println("Letter grade is: D ");
                 } else {
-                    System.out.println("Letter grade is: D" + "+");
+                    System.out.println("Letter grade is: F - EPIC FAIL.");
                 }
 
             }
+
+            // ************************* EXTRA ***********************8
+//            {
+//                Scanner input = new Scanner(System.in);
+//
+//                System.out.print("Enter a number 0 - 100: ");
+//                int userInput = input.nextInt( int, num)
+//                ;
+//                long sum = 0;
+//
+//                int num2 = num;
+//                boolean negative = false;
+//                if (num2 < 0) {
+//                    num2 *= -1;
+//                    negative = true;
+//                }
+//                // Loop to sum
+//                for (int i = 1; i <= num; i++) {
+//                    sum += i;
+//                }
+//                if (negative) sum *= -1;
+//                return sum;
+//            }
+            }
         }
     }
-}
