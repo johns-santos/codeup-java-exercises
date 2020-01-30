@@ -13,17 +13,14 @@ public class MethodsExercises {
         long div = division(5, 6);
         long mult = multiplication(5, 6);
         long mod = modulus(72, 9);
-        int randomNum =  gd101(0, 100, scan);
         System.out.println(add);
         System.out.println(sub);
         System.out.println(div);
         System.out.println(mult);
         System.out.println(mod);
-        System.out.println(randomNum);
         getInteger(1, 10, scan);
         factorial(getInteger(1, 10, scan));
         dice(scan);
-        gd101(scan);
     }
 
     private static long addition(long num1, long num2) {
