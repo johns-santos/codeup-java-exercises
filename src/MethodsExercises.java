@@ -13,14 +13,17 @@ public class MethodsExercises {
         long div = division(5, 6);
         long mult = multiplication(5, 6);
         long mod = modulus(72, 9);
+        int randomNum =  gd101(0, 100, scan);
         System.out.println(add);
         System.out.println(sub);
         System.out.println(div);
         System.out.println(mult);
         System.out.println(mod);
-        range(3, 20, scan);
-        factorial(range(3, 20, scan));
+        System.out.println(randomNum);
+        getInteger(1, 10, scan);
+        factorial(getInteger(1, 10, scan));
         dice(scan);
+        gd101(scan);
     }
 
     private static long addition(long num1, long num2) {
@@ -43,12 +46,12 @@ public class MethodsExercises {
         return (num1 % num2);
     }
 
-    private static int range(int min, int max, Scanner scan) {
+    private static int getInteger(int min, int max, Scanner scan) {
         System.out.print("Enter a number between " + min + " and " + max + ": ");
         int intake = scan.nextInt();
         if ((intake < 1) || (intake > 10)) {
             System.out.print("Invalid Input: " + intake + "\n");
-            return range(min, max, scan);
+            return getInteger(min, max, scan);
         } else {
             System.out.print("Valid Input: " + intake + "\n");
             return intake;
@@ -80,7 +83,7 @@ public class MethodsExercises {
             System.out.print("Press r to roll the dice! ");
         }
 
-        if (input == 'r') {
+        if(input == 'r') {
 
             System.out.print("You rolled " + num1 + " and " + num2 + ".\nWould you like to roll again? (y/n) ");
         }
@@ -101,4 +104,5 @@ public class MethodsExercises {
 
     }
 }
+
 
