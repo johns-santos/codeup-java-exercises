@@ -9,8 +9,14 @@ public class HighLow {
 
     public static void main(String[] args) {
 
-        Random rand = new Random(); // Generate a random number
-        int numToGuess = rand.nextInt(100); // Set upper bound for random num generator
+        // TODO: OPTION 1 FOR RANDOM *******************************************
+//        Random rand = new Random(); // Generate a random number
+//        int numToGuess = rand.nextInt(100); // Set upper bound for random num generator
+
+        // TODO: OPTION 2 FOR RANDOM *******************************************
+        int  rand = (int) Math.round(Math.floor(Math.random() * 100 +1));
+        int numToGuess = rand;//.nextInt(100); // Set upper bound for random num generator
+
         int numberOfTries = 0; // User guess attempts
         Scanner scan = new Scanner(System.in);
         int userGuess; // initialize user guess
@@ -28,7 +34,7 @@ public class HighLow {
             win = true;
         }
         else if (userGuess < numToGuess) {
-            System.out.println(" HIGHER!!!!");
+            System.out.println( " HIGHER!!!!");
         }
         else if (userGuess > numToGuess) {
             System.out.println(" LOWER!!!!!! ");
@@ -36,7 +42,7 @@ public class HighLow {
         //======================================================
     }
 
-        System.out.println("Good Guess!!!! ");
+        System.out.println( "Good Guess!!!! \n");
         System.out.println("The number was " + numToGuess +".");
         System.out.println("It took you " + numberOfTries + ".");
 

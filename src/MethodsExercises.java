@@ -21,6 +21,9 @@ public class MethodsExercises {
         getInteger(1, 10, scan);
         factorial(getInteger(1, 10, scan));
         dice(scan);
+
+        String bin1 = "10";
+        String bin2 = "01";
     }
 
     private static long addition(long num1, long num2) {
@@ -76,11 +79,12 @@ public class MethodsExercises {
         int num1 = roll();
         int num2 = roll();
 
+
         while (input != 'r') {
             System.out.print("Press r to roll the dice! ");
         }
 
-        if(input == 'r') {
+        if (input == 'r') {
 
             System.out.print("You rolled " + num1 + " and " + num2 + ".\nWould you like to roll again? (y/n) ");
         }
@@ -96,10 +100,16 @@ public class MethodsExercises {
 
     public static int roll() {
         Random rand = new Random();
-        int value = rand.nextInt(8) + 1;
+        int value = rand.nextInt(6) + 1;
         return value;
 
     }
+
+//    public static String getAnswer(String bin1, String bin2) {
+//        anwer = bin1 + bin2;
+//        return answer;
+//        System.out.println(answer);
+//    }
 }
 
 
