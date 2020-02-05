@@ -1,6 +1,6 @@
 package shapes;
 
-public class Square extends Rectangle implements Measurable {
+public class Square extends Rectangle {
     private double side;
 
     // Create a class named square that takes in one parameters named SIDE and constructs a square
@@ -17,7 +17,6 @@ public class Square extends Rectangle implements Measurable {
 
     public double getPerimeter(){
         System.out.println("SQUARE PERIMETER");
-
         return 4 * this.side;
     }
 
