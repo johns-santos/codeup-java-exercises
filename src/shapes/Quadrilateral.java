@@ -22,6 +22,7 @@ public abstract class Quadrilateral extends shapes implements Measurable{
 
 
     // TODO: Abstract methods for setting the length and width.
+    // void = used as no confirmation is expected for setting a parameter;
     public abstract void setLength(double length);
     public abstract void setWidth(double width);
 
